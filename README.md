@@ -1,7 +1,8 @@
 Tour Package Management 
 ![Request URL Screenshot](demo.webp)
    
-   ##### 🔸This is simple Food Delivery App built using Spring Boot framework. The idea was to build  a simple Food Delivery App to perform basic CRUD operations                  with some validations and also auhentication.
+   ##### 🔸Project Description:
+A Spring Boot backend service for creating, managing, and searching tour packages. Supports optional image uploads to AWS S3, API security via API key, Swagger documentation, JUnit tests, and Docker-based deployment.
 ## :one: Frameworks and Languages Used -
     1. SpringBoot
     2. JAVA-17
