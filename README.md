@@ -1,4 +1,4 @@
-Tour Package Management ![online-food-delivery-industry-min](https://github.com/DeepakKDEV/ApicrudOperation/assets/142679882/11625f4d-3afe-4a4f-a634-7d9a1bf6114f)
+Tour Package Management ![Request URL Screenshot](intro.jng)
    
    ##### 🔸This is simple Food Delivery App built using Spring Boot framework. The idea was to build  a simple Food Delivery App to perform basic CRUD operations                  with some validations and also auhentication.
 ## :one: Frameworks and Languages Used -
@@ -119,12 +119,12 @@ http://localhost:8081/api/tours/1
 ```java
  http://localhost:8081/swagger-ui/index.html#/
 ```
-TourController![Screenshot_10](https://github.com/DeepakKDEV/FoodDelivery/assets/142679882/399bebb1-d5c0-43eb-8929-0e246b7c3337)
+TourController!![Request URL Screenshot](tourpackage.png)
 
 
 ## :seven: View in postgresql Database
 
-![Screenshot_8](https://github.com/DeepakKDEV/FoodDelivery/assets/142679882/c48a3e77-abeb-4fbd-a5ae-5ad440fd3254)
+![Request URL Screenshot](database.png)
 
 
 

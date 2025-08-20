@@ -45,4 +45,10 @@ public class TourController {
     public TourPackage getTourById(@PathVariable Long id) {
         return service.getTourById(id);
     }
+    @Operation(summary = "List all tour packages", description = "Retrieve all tour packages from the database without any filter.")
+    @ApiResponse(responseCode = "200", description = "All tour packages returned successfully")
+    @GetMapping("/all")
+    public List<TourPackage> listAllTours() {
+        return service.getAllTours();
+    }
 }
