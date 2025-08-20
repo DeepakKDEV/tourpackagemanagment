@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "e7534e84-f0ba-42bf-912a-e7127235262b",
+		"name": "tourManagment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29480325"
+	},
+	"item": [
+		{
+			"name": "tour/post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "MY_SECRET_KEY_123"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Goa Beach Holiday\",\n  \"description\": \"A 5-day holiday package including beach parties, water sports, and sightseeing in Goa.\",\n  \"duration\": \"5 Days / 4 Nights\",\n  \"actualPrice\": \"18000\",\n  \"discountedPrice\": \"13500\",\n  \"discountInPercentage\": \"25\",\n  \"location\": \"Goa\",\n  \"imageUrl\": \"https://example.com/images/goa-beach.jpg\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/tours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"tours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getrequest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/tours?location=Goa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"tours"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Goa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getrequestid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "MY_SECRET_KEY_123"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/tours/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"tours",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
